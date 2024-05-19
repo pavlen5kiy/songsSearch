@@ -108,6 +108,10 @@ class MusicSearchApp(QWidget):
         else:
             self.albumsList.addItem(QListWidgetItem('Nothing found'))
 
+        self.songsLabel.setText(f'Songs ({len(songs)} found)')
+        self.artistsLabel.setText(f'Artists ({len(artists)} found)')
+        self.albumsLabel.setText(f'Albums ({len(albums)} found)')
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
